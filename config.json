@@ -1,7 +1,7 @@
 {
-  "title": "Blog Saya",
-  "tagline": "Catatan tentang teknologi, SEO, dan pengembangan web",
-  "description": "Blog pribadi berisi tutorial, opini, dan catatan seputar pengembangan web, SEO, dan teknologi terkini.",
+  "title": "Demo Kuliner",
+  "tagline": "Demo Website Kuliner",
+  "description": "Demo website kuliner dengan sistem checkout via whatsapp",
   "author": "Admin",
   "language": "id",
   "theme": "company",
@@ -165,16 +165,16 @@
       "content": {}
     }
   },
-  "baseUrl": "https://akularis.com",
-  "basePath": "/",
+  "baseUrl": "https://kuliner.gudangweb.com",
+  "basePath": "",
   "postsPerPage": 10,
   "defaultOgImage": "",
   "logo": "",
   "favicon": "",
   "footerCopyright": "",
   "social": {
-    "twitter": "",
     "github": "username",
+    "twitter": "",
     "instagram": "",
     "linkedin": "",
     "email": ""
