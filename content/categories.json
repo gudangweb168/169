@@ -1,0 +1,17 @@
+[
+  {
+    "name": "SEO",
+    "slug": "seo",
+    "description": "Panduan, strategi, dan catatan seputar Search Engine Optimization serta Answer Engine Optimization (AEO)."
+  },
+  {
+    "name": "Pengembangan Web",
+    "slug": "pengembangan-web",
+    "description": "Tutorial dan pembahasan teknis seputar pembuatan dan optimasi website."
+  },
+  {
+    "name": "Pengumuman",
+    "slug": "pengumuman",
+    "description": "Kabar terbaru dan pembaruan dari blog ini."
+  }
+]

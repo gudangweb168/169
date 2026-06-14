@@ -1,0 +1,163 @@
+{
+  "name": "Company Profile",
+  "version": "1.2.0",
+  "author": "GudangWEB",
+  "description": "Tema company profile yang bersih & profesional — beranda berbentuk landing page (hero, layanan ber-tautan, tentang, statistik, FAQ, CTA) dengan dukungan blog/wawasan.",
+  "screenshot": "",
+  "options": {
+    "accent": { "type": "color", "label": "Warna Aksen", "default": "#2d54c8" }
+  },
+  "editors": ["home", "sidebar"],
+  "customize": {
+    "options": {
+      "accent": { "type": "color", "label": "Warna Aksen", "default": "#2d54c8" }
+    },
+    "sections": [
+      {
+        "id": "hero",
+        "label": "Hero",
+        "icon": "✶",
+        "description": "Bagian paling atas beranda — judul, sub-judul, dan tombol ajakan.",
+        "fields": [
+          { "key": "eyebrow", "type": "text", "label": "Eyebrow (label kecil)", "placeholder": "Profil Perusahaan" },
+          { "key": "headline", "type": "text", "label": "Judul (headline)", "placeholder": "Solusi digital untuk bisnis Anda" },
+          { "key": "subheadline", "type": "textarea", "label": "Sub-judul", "rows": 2 },
+          { "key": "heroBackground", "type": "image", "label": "Foto latar hero (background)" },
+          { "key": "heroImage", "type": "image", "label": "Foto samping hero", "hint": "Dipakai bila foto latar dikosongkan." },
+          { "key": "primaryCta", "type": "group", "label": "Tombol utama", "layout": "row", "fields": [
+            { "key": "text", "type": "text", "label": "Teks" },
+            { "key": "url", "type": "text", "label": "URL" }
+          ] },
+          { "key": "secondaryCta", "type": "group", "label": "Tombol kedua", "layout": "row", "fields": [
+            { "key": "text", "type": "text", "label": "Teks" },
+            { "key": "url", "type": "text", "label": "URL" }
+          ] }
+        ]
+      },
+      {
+        "id": "headerCta",
+        "label": "Tombol CTA Header",
+        "icon": "▸",
+        "description": "Tombol ajakan di pojok kanan header. Otomatis disembunyikan pada tampilan mobile. Kosongkan teks/URL untuk mengikuti Tombol utama.",
+        "fields": [
+          { "key": "headerCta.show", "type": "checkbox", "label": "Tampilkan tombol CTA di header", "default": true },
+          { "key": "headerCta", "type": "group", "label": "", "layout": "row", "fields": [
+            { "key": "text", "type": "text", "label": "Teks tombol" },
+            { "key": "url", "type": "text", "label": "URL tujuan" }
+          ] }
+        ]
+      },
+      {
+        "id": "stats",
+        "label": "Statistik",
+        "icon": "▦",
+        "description": "Angka-angka penanda kredibilitas. Tampil bila diisi minimal 2.",
+        "fields": [
+          { "key": "stats", "type": "repeater", "label": "Statistik", "addLabel": "+ Tambah Statistik", "itemLabel": "Statistik", "fields": [
+            { "key": "value", "type": "text", "label": "Angka", "placeholder": "120+" },
+            { "key": "label", "type": "text", "label": "Label", "placeholder": "Proyek Selesai" }
+          ] }
+        ]
+      },
+      {
+        "id": "services",
+        "label": "Layanan",
+        "icon": "▢",
+        "description": "Daftar layanan dengan ikon. Tiap kartu bisa ditautkan ke halaman detail.",
+        "fields": [
+          { "key": "servicesEyebrow", "type": "text", "label": "Eyebrow seksi", "placeholder": "Apa yang kami lakukan" },
+          { "key": "servicesTitle", "type": "text", "label": "Judul seksi", "placeholder": "Layanan Kami" },
+          { "key": "servicesIntro", "type": "textarea", "label": "Pengantar seksi", "rows": 2 },
+          { "key": "services", "type": "repeater", "label": "Daftar Layanan", "addLabel": "+ Tambah Layanan", "itemLabel": "Layanan", "fields": [
+            { "key": "icon", "type": "select", "label": "Ikon", "choices": ["spark", "layers", "chart", "shield", "chat", "rocket", "globe", "gear", "pen", "target", "clock", "users", "check"], "default": "spark" },
+            { "key": "title", "type": "text", "label": "Judul" },
+            { "key": "text", "type": "textarea", "label": "Teks", "rows": 2 },
+            { "key": "url", "type": "text", "label": "URL detail (opsional)", "placeholder": "/layanan/seo/ atau https://..." }
+          ] }
+        ]
+      },
+      {
+        "id": "about",
+        "label": "Tentang",
+        "icon": "◑",
+        "description": "Paragraf perkenalan singkat beserta poin-poin keunggulan.",
+        "fields": [
+          { "key": "about.eyebrow", "type": "text", "label": "Eyebrow", "placeholder": "Tentang Kami" },
+          { "key": "about.title", "type": "text", "label": "Judul" },
+          { "key": "about.text", "type": "textarea", "label": "Teks", "rows": 4 },
+          { "key": "about.image", "type": "image", "label": "Foto (opsional)" },
+          { "key": "about.points", "type": "repeater", "itemType": "string", "label": "Poin-poin", "addLabel": "+ Tambah Poin", "placeholder": "Poin keunggulan" }
+        ]
+      },
+      {
+        "id": "faq",
+        "label": "FAQ",
+        "icon": "?",
+        "description": "Tanya-jawab di beranda, lengkap dengan schema FAQPage untuk SEO/AEO.",
+        "fields": [
+          { "key": "faq.enabled", "type": "checkbox", "label": "Tampilkan FAQ di beranda", "default": true },
+          { "key": "faq.eyebrow", "type": "text", "label": "Eyebrow seksi", "placeholder": "FAQ" },
+          { "key": "faq.title", "type": "text", "label": "Judul seksi", "placeholder": "Pertanyaan yang Sering Diajukan" },
+          { "key": "faq.intro", "type": "textarea", "label": "Pengantar seksi", "rows": 2 },
+          { "key": "faq.items", "type": "repeater", "label": "Daftar Pertanyaan", "addLabel": "+ Tambah Pertanyaan", "itemLabel": "Pertanyaan", "fields": [
+            { "key": "q", "type": "text", "label": "Pertanyaan", "placeholder": "Berapa biaya pembuatan website?" },
+            { "key": "a", "type": "textarea", "label": "Jawaban", "rows": 3 }
+          ] }
+        ]
+      },
+      {
+        "id": "ctaBand",
+        "label": "CTA Band",
+        "icon": "▭",
+        "description": "Pita ajakan di bagian bawah beranda.",
+        "fields": [
+          { "key": "ctaBand.title", "type": "text", "label": "Judul" },
+          { "key": "ctaBand.text", "type": "textarea", "label": "Teks", "rows": 2 },
+          { "key": "ctaBand.button", "type": "group", "label": "Tombol", "layout": "row", "fields": [
+            { "key": "text", "type": "text", "label": "Teks" },
+            { "key": "url", "type": "text", "label": "URL" }
+          ] }
+        ]
+      },
+      {
+        "id": "sidebar",
+        "label": "Sidebar",
+        "icon": "▥",
+        "description": "Blok yang tampil di halaman selain beranda (halaman statis, artikel, arsip). Kosongkan agar tampil lebar penuh.",
+        "fields": [
+          { "key": "sidebar", "type": "repeater", "label": "Blok Sidebar", "addLabel": "+ Tambah Blok", "itemLabel": "Blok",
+            "typeField": "type",
+            "typeLabel": "Tipe Blok",
+            "typeChoices": [
+              ["text", "Teks / HTML"], ["cta", "Ajakan (CTA)"], ["links", "Daftar Tautan"],
+              ["recent-posts", "Artikel Terbaru"], ["contact", "Kontak"], ["image", "Gambar"], ["social", "Media Sosial"]
+            ],
+            "common": [
+              { "key": "title", "type": "text", "label": "Judul" }
+            ],
+            "variants": {
+              "text": [ { "key": "content", "type": "textarea", "label": "Konten (HTML)", "rows": 3 } ],
+              "cta": [
+                { "key": "text", "type": "textarea", "label": "Teks", "rows": 2 },
+                { "key": "button", "type": "group", "label": "Tombol", "layout": "row", "fields": [
+                  { "key": "text", "type": "text", "label": "Teks" },
+                  { "key": "url", "type": "text", "label": "URL" }
+                ] }
+              ],
+              "links": [ { "key": "items", "type": "linklist", "label": "Tautan (satu per baris: Label | URL)", "rows": 4, "placeholder": "Layanan | /#layanan" } ],
+              "recent-posts": [ { "key": "count", "type": "number", "label": "Jumlah artikel", "min": 1, "max": 12, "default": 4 } ],
+              "contact": [ { "key": "text", "type": "textarea", "label": "Teks", "rows": 2 } ],
+              "image": [
+                { "key": "src", "type": "image", "label": "Gambar" },
+                { "key": "alt", "type": "text", "label": "Alt" },
+                { "key": "caption", "type": "text", "label": "Keterangan" },
+                { "key": "link", "type": "text", "label": "Tautan (opsional)" }
+              ],
+              "social": [ { "key": "_note", "type": "note", "label": "Menampilkan ikon dari Pengaturan Situs → Media Sosial." } ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

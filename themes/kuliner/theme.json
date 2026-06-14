@@ -1,0 +1,385 @@
+{
+  "name": "Kuliner",
+  "version": "1.0.0",
+  "author": "GudangWEB",
+  "description": "Tema pemesanan makanan ala GoFood/GrabFood — produk dengan field harga, keranjang belanja, checkout via WhatsApp, dan pemesanan per nomor meja (?meja=12). Beranda mobile-first: hero slider, kotak cari, kategori berfoto, daftar menu dengan tombol tambah, lokasi & peta, serta CTA.",
+  "screenshot": "",
+  "options": {
+    "accent": {
+      "type": "color",
+      "label": "Warna Aksen",
+      "default": "#f24a23"
+    },
+    "accent2": {
+      "type": "color",
+      "label": "Warna Aksi / WhatsApp",
+      "default": "#0d9f4f"
+    },
+    "fontBody": {
+      "type": "select",
+      "label": "Font Isi",
+      "default": "Plus Jakarta Sans",
+      "choices": ["Plus Jakarta Sans", "Inter", "Poppins"]
+    }
+  },
+  "editors": ["home"],
+  "customize": {
+    "options": {
+      "accent": {
+        "type": "color",
+        "label": "Warna Aksen",
+        "default": "#f24a23"
+      },
+      "accent2": {
+        "type": "color",
+        "label": "Warna Aksi / WhatsApp",
+        "default": "#0d9f4f"
+      },
+      "fontBody": {
+        "type": "select",
+        "label": "Font Isi",
+        "default": "Plus Jakarta Sans",
+        "choices": ["Plus Jakarta Sans", "Inter", "Poppins"]
+      }
+    },
+    "sections": [
+      {
+        "id": "hero",
+        "label": "Hero Slider",
+        "icon": "✶",
+        "description": "Banner geser di paling atas beranda. Tambahkan beberapa slide promo/menu unggulan.",
+        "fields": [
+          {
+            "key": "hero.enabled",
+            "type": "checkbox",
+            "label": "Tampilkan hero slider",
+            "default": true
+          },
+          {
+            "key": "hero.autoplay",
+            "type": "checkbox",
+            "label": "Geser otomatis",
+            "default": true
+          },
+          {
+            "key": "hero.interval",
+            "type": "number",
+            "label": "Interval geser (detik)",
+            "default": 5,
+            "min": 2,
+            "hint": "Minimal 2 detik. Hanya berlaku bila geser otomatis aktif."
+          },
+          {
+            "key": "hero.slides",
+            "type": "repeater",
+            "label": "Daftar Slide",
+            "addLabel": "+ Tambah Slide",
+            "itemLabel": "Slide",
+            "fields": [
+              {
+                "key": "image",
+                "type": "image",
+                "label": "Foto slide"
+              },
+              {
+                "key": "title",
+                "type": "text",
+                "label": "Judul",
+                "placeholder": "Promo Spesial Hari Ini"
+              },
+              {
+                "key": "subtitle",
+                "type": "textarea",
+                "label": "Sub-judul",
+                "rows": 2
+              },
+              {
+                "key": "buttonText",
+                "type": "text",
+                "label": "Teks tombol (opsional)",
+                "placeholder": "Lihat Menu"
+              },
+              {
+                "key": "buttonUrl",
+                "type": "text",
+                "label": "URL tombol (opsional)",
+                "placeholder": "#menu atau /menu/"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "search",
+        "label": "Kotak Pencarian",
+        "icon": "⌕",
+        "description": "Kolom cari menu di beranda (memfilter daftar menu secara langsung).",
+        "fields": [
+          {
+            "key": "search.enabled",
+            "type": "checkbox",
+            "label": "Tampilkan kotak pencarian",
+            "default": true
+          },
+          {
+            "key": "search.placeholder",
+            "type": "text",
+            "label": "Teks placeholder",
+            "placeholder": "Cari menu favoritmu…"
+          }
+        ]
+      },
+      {
+        "id": "categories",
+        "label": "Kategori Berfoto",
+        "icon": "▦",
+        "description": "Pilihan kategori dengan foto di beranda. Klik kategori akan memfilter daftar menu. Tampil bila diisi minimal satu.",
+        "fields": [
+          {
+            "key": "categories.enabled",
+            "type": "checkbox",
+            "label": "Tampilkan kategori",
+            "default": true
+          },
+          {
+            "key": "categories.eyebrow",
+            "type": "text",
+            "label": "Eyebrow (label kecil)",
+            "placeholder": "Mau makan apa hari ini?"
+          },
+          {
+            "key": "categories.title",
+            "type": "text",
+            "label": "Judul seksi",
+            "placeholder": "Pilih Kategori"
+          },
+          {
+            "key": "categories.items",
+            "type": "repeater",
+            "label": "Daftar Kategori",
+            "addLabel": "+ Tambah Kategori",
+            "itemLabel": "Kategori",
+            "fields": [
+              {
+                "key": "name",
+                "type": "text",
+                "label": "Nama kategori",
+                "placeholder": "Makanan Berat"
+              },
+              {
+                "key": "image",
+                "type": "image",
+                "label": "Foto kategori"
+              },
+              {
+                "key": "filter",
+                "type": "text",
+                "label": "Slug kategori yang difilter (opsional)",
+                "placeholder": "makanan-berat",
+                "hint": "Cocokkan dengan kategori post. Kosongkan untuk memfilter berdasarkan nama."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "products",
+        "label": "Daftar Menu",
+        "icon": "▢",
+        "description": "Menu yang tampil di beranda. Menu diambil dari post yang memiliki field 'harga' di frontmatter.",
+        "fields": [
+          {
+            "key": "products.enabled",
+            "type": "checkbox",
+            "label": "Tampilkan daftar menu",
+            "default": true
+          },
+          {
+            "key": "products.eyebrow",
+            "type": "text",
+            "label": "Eyebrow (label kecil)",
+            "placeholder": "Menu Kami"
+          },
+          {
+            "key": "products.title",
+            "type": "text",
+            "label": "Judul seksi",
+            "placeholder": "Daftar Menu"
+          },
+          {
+            "key": "products.intro",
+            "type": "textarea",
+            "label": "Pengantar seksi (opsional)",
+            "rows": 2
+          },
+          {
+            "key": "products.source",
+            "type": "select",
+            "label": "Sumber menu",
+            "default": "terbaru",
+            "choices": [
+              ["terbaru", "Menu Terbaru"],
+              ["kategori", "Kategori Tertentu"]
+            ]
+          },
+          {
+            "key": "products.category",
+            "type": "text",
+            "label": "Slug kategori (bila sumber = Kategori Tertentu)",
+            "placeholder": "makanan-berat"
+          },
+          {
+            "key": "products.limit",
+            "type": "number",
+            "label": "Jumlah menu ditampilkan",
+            "default": 0,
+            "min": 0,
+            "hint": "Isi 0 untuk menampilkan semua."
+          },
+          {
+            "key": "products.showPrice",
+            "type": "checkbox",
+            "label": "Tampilkan harga pada kartu menu",
+            "default": true
+          },
+          {
+            "key": "products.showCategoryFilter",
+            "type": "checkbox",
+            "label": "Tampilkan filter kategori di atas daftar menu",
+            "default": true
+          }
+        ]
+      },
+      {
+        "id": "location",
+        "label": "Lokasi & Kontak",
+        "icon": "◎",
+        "description": "Alamat, peta, jam buka, dan nomor telepon. Tampil bila diisi.",
+        "fields": [
+          {
+            "key": "location.enabled",
+            "type": "checkbox",
+            "label": "Tampilkan seksi lokasi",
+            "default": true
+          },
+          {
+            "key": "location.title",
+            "type": "text",
+            "label": "Judul seksi",
+            "placeholder": "Lokasi & Kontak"
+          },
+          {
+            "key": "location.address",
+            "type": "textarea",
+            "label": "Alamat",
+            "rows": 2
+          },
+          {
+            "key": "location.mapsEmbed",
+            "type": "textarea",
+            "label": "Kode embed Google Maps (iframe)",
+            "rows": 3,
+            "hint": "Tempel seluruh kode <iframe …> dari Google Maps → Bagikan → Sematkan peta."
+          },
+          {
+            "key": "location.mapsLink",
+            "type": "text",
+            "label": "Tautan Google Maps (opsional)",
+            "placeholder": "https://maps.app.goo.gl/…"
+          },
+          {
+            "key": "location.phone",
+            "type": "text",
+            "label": "Nomor telepon",
+            "placeholder": "021-1234567"
+          },
+          {
+            "key": "location.hours",
+            "type": "textarea",
+            "label": "Jam buka",
+            "rows": 2,
+            "placeholder": "Setiap hari, 10.00 – 22.00 WIB"
+          }
+        ]
+      },
+      {
+        "id": "order",
+        "label": "Pemesanan WhatsApp",
+        "icon": "✆",
+        "description": "Pengaturan checkout keranjang via WhatsApp. Pesanan beserta nomor meja akan dikirim ke nomor ini.",
+        "fields": [
+          {
+            "key": "order.whatsapp",
+            "type": "text",
+            "label": "Nomor WhatsApp tujuan pesanan",
+            "placeholder": "628123456789",
+            "required": true,
+            "hint": "Format internasional tanpa tanda + (contoh: 628123456789)."
+          },
+          {
+            "key": "order.storeName",
+            "type": "text",
+            "label": "Nama toko/resto (opsional)",
+            "hint": "Bila kosong, memakai judul situs."
+          },
+          {
+            "key": "order.greeting",
+            "type": "text",
+            "label": "Salam pembuka pesan",
+            "placeholder": "Halo, saya ingin memesan:"
+          },
+          {
+            "key": "order.currency",
+            "type": "text",
+            "label": "Simbol mata uang",
+            "default": "Rp"
+          },
+          {
+            "key": "order.note",
+            "type": "textarea",
+            "label": "Catatan tambahan di akhir pesan (opsional)",
+            "rows": 2
+          }
+        ]
+      },
+      {
+        "id": "cta",
+        "label": "Ajakan (CTA)",
+        "icon": "▸",
+        "description": "Pita ajakan di bagian bawah beranda. Tampil bila judul atau teks diisi.",
+        "fields": [
+          {
+            "key": "cta.enabled",
+            "type": "checkbox",
+            "label": "Tampilkan seksi CTA",
+            "default": true
+          },
+          {
+            "key": "cta.title",
+            "type": "text",
+            "label": "Judul",
+            "placeholder": "Lapar? Pesan sekarang!"
+          },
+          {
+            "key": "cta.text",
+            "type": "textarea",
+            "label": "Teks",
+            "rows": 2
+          },
+          {
+            "key": "cta.buttonText",
+            "type": "text",
+            "label": "Teks tombol",
+            "placeholder": "Pesan Sekarang"
+          },
+          {
+            "key": "cta.buttonUrl",
+            "type": "text",
+            "label": "URL tombol",
+            "placeholder": "#menu"
+          }
+        ]
+      }
+    ]
+  }
+}

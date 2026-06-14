@@ -1,0 +1,20 @@
+[
+  {
+    "type": "text",
+    "title": "Tentang Blog",
+    "content": "<p>Catatan tentang teknologi, SEO, dan pengembangan web. Dibuat dengan GitCMS.</p>"
+  },
+  {
+    "type": "recent-posts",
+    "title": "Artikel Terbaru",
+    "count": 5
+  },
+  {
+    "type": "categories",
+    "title": "Kategori"
+  },
+  {
+    "type": "social",
+    "title": "Ikuti Kami"
+  }
+]

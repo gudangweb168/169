@@ -1,0 +1,14 @@
+{
+  "name": "gitcms-blog",
+  "version": "1.0.0",
+  "description": "Blog statis berbasis GitHub API dengan CMS terintegrasi (GitCMS)",
+  "private": true,
+  "scripts": {
+    "build": "node build/build.js",
+    "serve": "node build/serve.js"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "marked": "^12.0.2"
+  }
+}

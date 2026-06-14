@@ -1,0 +1,361 @@
+{
+  "title": "Blog Saya",
+  "tagline": "Catatan tentang teknologi, SEO, dan pengembangan web",
+  "description": "Blog pribadi berisi tutorial, opini, dan catatan seputar pengembangan web, SEO, dan teknologi terkini.",
+  "author": "Admin",
+  "language": "id",
+  "theme": "company",
+  "themeOptions": {},
+  "themeData": {
+    "company": {
+      "options": {},
+      "content": {
+        "eyebrow": "Profil Perusahaan",
+        "headline": "Solusi digital untuk pertumbuhan bisnis Anda",
+        "subheadline": "Kami merancang website, strategi SEO, dan konten yang membantu perusahaan Anda tampil profesional dan dipercaya pelanggan.",
+        "primaryCta": {
+          "text": "Hubungi Kami",
+          "url": "/about/"
+        },
+        "secondaryCta": {
+          "text": "Lihat Layanan",
+          "url": "#layanan"
+        },
+        "headerCta": {
+          "text": "Konsultasi Gratis",
+          "url": "/about/",
+          "show": true
+        },
+        "heroImage": "",
+        "heroBackground": "/public/images/hero-sample.svg",
+        "stats": [
+          {
+            "value": "120+",
+            "label": "Proyek Selesai"
+          },
+          {
+            "value": "8 Thn",
+            "label": "Pengalaman"
+          },
+          {
+            "value": "4.9/5",
+            "label": "Kepuasan Klien"
+          }
+        ],
+        "servicesEyebrow": "Apa yang kami lakukan",
+        "servicesTitle": "Layanan Kami",
+        "servicesIntro": "Layanan menyeluruh untuk membangun dan mengembangkan kehadiran digital bisnis Anda.",
+        "services": [
+          {
+            "icon": "layers",
+            "title": "Pengembangan Web",
+            "text": "Website cepat, aman, dan ramah SEO yang dibangun sesuai kebutuhan bisnis Anda.",
+            "url": "/about/"
+          },
+          {
+            "icon": "chart",
+            "title": "Optimasi SEO",
+            "text": "Riset kata kunci, optimasi teknis, dan strategi konten untuk mendongkrak peringkat di Google.",
+            "url": "/category/seo/"
+          },
+          {
+            "icon": "pen",
+            "title": "Konten & Branding",
+            "text": "Penulisan konten profesional dan identitas visual yang memperkuat citra merek Anda.",
+            "url": ""
+          },
+          {
+            "icon": "gear",
+            "title": "Pemeliharaan & Dukungan",
+            "text": "Pembaruan rutin, pemantauan keamanan, dan dukungan teknis yang responsif.",
+            "url": ""
+          }
+        ],
+        "about": {
+          "eyebrow": "Tentang Kami",
+          "title": "Mitra digital yang tumbuh bersama bisnis Anda",
+          "text": "Kami membantu perusahaan dari berbagai skala membangun kehadiran digital yang kuat — mulai dari situs web profesional hingga strategi pemasaran yang terukur. Fokus kami sederhana: hasil nyata yang berdampak pada pertumbuhan Anda.",
+          "image": "",
+          "points": [
+            "Tim berpengalaman lintas disiplin",
+            "Proses transparan dengan laporan berkala",
+            "Solusi yang disesuaikan dengan tujuan Anda"
+          ]
+        },
+        "ctaBand": {
+          "title": "Siap mengembangkan bisnis Anda?",
+          "text": "Diskusikan kebutuhan proyek Anda dengan tim kami hari ini — konsultasi awal gratis tanpa komitmen.",
+          "button": {
+            "text": "Hubungi Kami",
+            "url": "/about/"
+          }
+        },
+        "faq": {
+          "enabled": true,
+          "eyebrow": "FAQ",
+          "title": "Pertanyaan yang Sering Diajukan",
+          "intro": "Beberapa hal yang paling sering ditanyakan calon klien sebelum memulai proyek bersama kami.",
+          "items": [
+            {
+              "q": "Berapa lama waktu pengerjaan sebuah website?",
+              "a": "Tergantung kompleksitas, umumnya 2–6 minggu. Website company profile standar selesai sekitar 2–3 minggu, sedangkan proyek dengan fitur khusus seperti e-commerce membutuhkan waktu lebih panjang. Kami akan memberikan estimasi yang jelas di awal proyek."
+            },
+            {
+              "q": "Apakah website yang dibuat sudah ramah SEO?",
+              "a": "Ya. Setiap website kami bangun dengan struktur HTML yang bersih, kecepatan tinggi, markup schema, sitemap, serta meta tag yang teroptimasi sejak awal — fondasi penting agar mudah ditemukan di Google."
+            },
+            {
+              "q": "Apakah saya bisa mengelola konten sendiri?",
+              "a": "Tentu. Kami menyertakan panel CMS yang mudah digunakan sehingga Anda dapat memperbarui artikel, layanan, dan halaman tanpa perlu menyentuh kode. Kami juga memberikan panduan singkat penggunaannya."
+            },
+            {
+              "q": "Apakah tersedia layanan pemeliharaan setelah website jadi?",
+              "a": "Tersedia. Kami menawarkan paket pemeliharaan berkala yang mencakup pembaruan keamanan, pencadangan rutin, dan dukungan teknis agar website Anda selalu prima."
+            }
+          ]
+        },
+        "sidebar": [
+          {
+            "type": "text",
+            "title": "Tentang Kami",
+            "content": "<p>Kami membantu bisnis membangun kehadiran digital yang kuat — dari website profesional hingga strategi SEO yang terukur.</p>"
+          },
+          {
+            "type": "cta",
+            "title": "Konsultasi Gratis",
+            "text": "Ceritakan kebutuhan proyek Anda, kami bantu carikan solusi terbaiknya.",
+            "button": {
+              "text": "Hubungi Kami",
+              "url": "/about/"
+            }
+          },
+          {
+            "type": "recent-posts",
+            "title": "Artikel Terbaru",
+            "count": 4
+          },
+          {
+            "type": "links",
+            "title": "Tautan Cepat",
+            "items": [
+              {
+                "label": "Layanan",
+                "url": "/#layanan"
+              },
+              {
+                "label": "Tentang Kami",
+                "url": "/about/"
+              },
+              {
+                "label": "Kategori SEO",
+                "url": "/category/seo/"
+              }
+            ]
+          },
+          {
+            "type": "contact",
+            "title": "Hubungi Kami",
+            "text": "Punya pertanyaan atau ingin memulai proyek? Kami siap membantu."
+          }
+        ]
+      }
+    },
+    "default": {
+      "options": {},
+      "content": {}
+    }
+  },
+  "baseUrl": "https://akularis.com",
+  "basePath": "/",
+  "postsPerPage": 10,
+  "defaultOgImage": "",
+  "logo": "",
+  "favicon": "",
+  "footerCopyright": "",
+  "social": {
+    "twitter": "",
+    "github": "username",
+    "instagram": "",
+    "linkedin": "",
+    "email": ""
+  },
+  "nav": [
+    {
+      "label": "Beranda",
+      "url": "/"
+    },
+    {
+      "label": "Kategori",
+      "url": "#",
+      "children": [
+        {
+          "label": "SEO",
+          "url": "/category/seo/"
+        },
+        {
+          "label": "Pengembangan Web",
+          "url": "/category/pengembangan-web/"
+        },
+        {
+          "label": "Pengumuman",
+          "url": "/category/pengumuman/"
+        }
+      ]
+    },
+    {
+      "label": "Tentang",
+      "url": "/about/"
+    }
+  ],
+  "profile": {
+    "eyebrow": "Profil Perusahaan",
+    "headline": "Solusi digital untuk pertumbuhan bisnis Anda",
+    "subheadline": "Kami merancang website, strategi SEO, dan konten yang membantu perusahaan Anda tampil profesional dan dipercaya pelanggan.",
+    "primaryCta": {
+      "text": "Hubungi Kami",
+      "url": "/about/"
+    },
+    "secondaryCta": {
+      "text": "Lihat Layanan",
+      "url": "#layanan"
+    },
+    "headerCta": {
+      "text": "Konsultasi Gratis",
+      "url": "/about/",
+      "show": true
+    },
+    "heroImage": "",
+    "heroBackground": "/public/images/hero-sample.svg",
+    "stats": [
+      {
+        "value": "120+",
+        "label": "Proyek Selesai"
+      },
+      {
+        "value": "8 Thn",
+        "label": "Pengalaman"
+      },
+      {
+        "value": "4.9/5",
+        "label": "Kepuasan Klien"
+      }
+    ],
+    "servicesEyebrow": "Apa yang kami lakukan",
+    "servicesTitle": "Layanan Kami",
+    "servicesIntro": "Layanan menyeluruh untuk membangun dan mengembangkan kehadiran digital bisnis Anda.",
+    "services": [
+      {
+        "icon": "layers",
+        "title": "Pengembangan Web",
+        "text": "Website cepat, aman, dan ramah SEO yang dibangun sesuai kebutuhan bisnis Anda.",
+        "url": "/about/"
+      },
+      {
+        "icon": "chart",
+        "title": "Optimasi SEO",
+        "text": "Riset kata kunci, optimasi teknis, dan strategi konten untuk mendongkrak peringkat di Google.",
+        "url": "/category/seo/"
+      },
+      {
+        "icon": "pen",
+        "title": "Konten & Branding",
+        "text": "Penulisan konten profesional dan identitas visual yang memperkuat citra merek Anda.",
+        "url": ""
+      },
+      {
+        "icon": "gear",
+        "title": "Pemeliharaan & Dukungan",
+        "text": "Pembaruan rutin, pemantauan keamanan, dan dukungan teknis yang responsif.",
+        "url": ""
+      }
+    ],
+    "about": {
+      "eyebrow": "Tentang Kami",
+      "title": "Mitra digital yang tumbuh bersama bisnis Anda",
+      "text": "Kami membantu perusahaan dari berbagai skala membangun kehadiran digital yang kuat — mulai dari situs web profesional hingga strategi pemasaran yang terukur. Fokus kami sederhana: hasil nyata yang berdampak pada pertumbuhan Anda.",
+      "image": "",
+      "points": [
+        "Tim berpengalaman lintas disiplin",
+        "Proses transparan dengan laporan berkala",
+        "Solusi yang disesuaikan dengan tujuan Anda"
+      ]
+    },
+    "ctaBand": {
+      "title": "Siap mengembangkan bisnis Anda?",
+      "text": "Diskusikan kebutuhan proyek Anda dengan tim kami hari ini — konsultasi awal gratis tanpa komitmen.",
+      "button": {
+        "text": "Hubungi Kami",
+        "url": "/about/"
+      }
+    },
+    "faq": {
+      "enabled": true,
+      "eyebrow": "FAQ",
+      "title": "Pertanyaan yang Sering Diajukan",
+      "intro": "Beberapa hal yang paling sering ditanyakan calon klien sebelum memulai proyek bersama kami.",
+      "items": [
+        {
+          "q": "Berapa lama waktu pengerjaan sebuah website?",
+          "a": "Tergantung kompleksitas, umumnya 2–6 minggu. Website company profile standar selesai sekitar 2–3 minggu, sedangkan proyek dengan fitur khusus seperti e-commerce membutuhkan waktu lebih panjang. Kami akan memberikan estimasi yang jelas di awal proyek."
+        },
+        {
+          "q": "Apakah website yang dibuat sudah ramah SEO?",
+          "a": "Ya. Setiap website kami bangun dengan struktur HTML yang bersih, kecepatan tinggi, markup schema, sitemap, serta meta tag yang teroptimasi sejak awal — fondasi penting agar mudah ditemukan di Google."
+        },
+        {
+          "q": "Apakah saya bisa mengelola konten sendiri?",
+          "a": "Tentu. Kami menyertakan panel CMS yang mudah digunakan sehingga Anda dapat memperbarui artikel, layanan, dan halaman tanpa perlu menyentuh kode. Kami juga memberikan panduan singkat penggunaannya."
+        },
+        {
+          "q": "Apakah tersedia layanan pemeliharaan setelah website jadi?",
+          "a": "Tersedia. Kami menawarkan paket pemeliharaan berkala yang mencakup pembaruan keamanan, pencadangan rutin, dan dukungan teknis agar website Anda selalu prima."
+        }
+      ]
+    },
+    "sidebar": [
+      {
+        "type": "text",
+        "title": "Tentang Kami",
+        "content": "<p>Kami membantu bisnis membangun kehadiran digital yang kuat — dari website profesional hingga strategi SEO yang terukur.</p>"
+      },
+      {
+        "type": "cta",
+        "title": "Konsultasi Gratis",
+        "text": "Ceritakan kebutuhan proyek Anda, kami bantu carikan solusi terbaiknya.",
+        "button": {
+          "text": "Hubungi Kami",
+          "url": "/about/"
+        }
+      },
+      {
+        "type": "recent-posts",
+        "title": "Artikel Terbaru",
+        "count": 4
+      },
+      {
+        "type": "links",
+        "title": "Tautan Cepat",
+        "items": [
+          {
+            "label": "Layanan",
+            "url": "/#layanan"
+          },
+          {
+            "label": "Tentang Kami",
+            "url": "/about/"
+          },
+          {
+            "label": "Kategori SEO",
+            "url": "/category/seo/"
+          }
+        ]
+      },
+      {
+        "type": "contact",
+        "title": "Hubungi Kami",
+        "text": "Punya pertanyaan atau ingin memulai proyek? Kami siap membantu."
+      }
+    ]
+  },
+  "footerText": "Dibuat dengan GitCMS — konten tersimpan di GitHub."
+}
