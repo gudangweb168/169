@@ -1,13 +1,13 @@
 ---
-title: "Selamat Datang di Blog Saya"
+title: Selamat Datang di Blog Saya
 slug: selamat-datang
 date: 2026-06-05
 status: published
-category: "Pengumuman"
-author: "Nama Anda"
+category: Pengumuman
+author: Nama Anda
 tags: ["getting-started", "blog"]
-excerpt: "Artikel pembuka yang menjelaskan tentang blog ini dan apa saja yang akan Anda temukan di sini."
-featured_image: ""
+excerpt: Artikel pembuka yang menjelaskan tentang blog ini dan apa saja yang akan Anda temukan di sini.
+harga: 25000
 ---
 
 Halo dan selamat datang! Ini adalah artikel pertama di blog yang dibangun sepenuhnya di atas **GitHub** — tanpa database, tanpa server, dan tanpa biaya hosting.
