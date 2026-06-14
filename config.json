@@ -5,7 +5,9 @@
   "author": "Admin",
   "language": "id",
   "theme": "kuliner",
-  "themeOptions": {},
+  "themeOptions": {
+    "accent": "#216402"
+  },
   "themeData": {
     "company": {
       "options": {},
@@ -165,8 +167,24 @@
       "content": {}
     },
     "kuliner": {
-      "options": {},
-      "content": {}
+      "options": {
+        "accent": "#216402"
+      },
+      "content": {
+        "hero": {
+          "slides": [],
+          "enabled": true,
+          "autoplay": true,
+          "interval": 5
+        },
+        "order": {
+          "whatsapp": "6287741135796",
+          "storeName": "Gudang Resto",
+          "greeting": "Halo Saya ingin memesan :",
+          "currency": "Rp",
+          "note": ""
+        }
+      }
     }
   },
   "baseUrl": "https://kuliner.gudangweb.com",
@@ -211,6 +229,20 @@
       "url": "/about/"
     }
   ],
-  "profile": {},
+  "profile": {
+    "hero": {
+      "slides": [],
+      "enabled": true,
+      "autoplay": true,
+      "interval": 5
+    },
+    "order": {
+      "whatsapp": "6287741135796",
+      "storeName": "Gudang Resto",
+      "greeting": "Halo Saya ingin memesan :",
+      "currency": "Rp",
+      "note": ""
+    }
+  },
   "footerText": "Dibuat dengan GitCMS — konten tersimpan di GitHub."
 }
